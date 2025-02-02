@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #37517e;
+    --secondary-color: #47b2e4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: rgba(40, 58, 90, 0.9) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url('img/hero-img.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.client-logo {
+    filter: grayscale(100%);
+    transition: all 0.4s ease-in-out;
+    max-height: 60px;
+    opacity: 0.5;
+}
+
+.client-logo:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.portfolio-item {
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-item img {
+    transition: all 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #209dd8;
+    border-color: #209dd8;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(71, 178, 228, 0.3);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--secondary-color) !important;
+}
+
+.team-member {
+    transition: all 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.social-links a {
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+.animated {
+    animation: float 3s ease-in-out infinite;
+}
+ .bg-darker {
+     background-color: #14213d;
+ }
+
+ .text-primary i {
+     font-size: 2.5rem;
+ }
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-section .btn-container {
+        justify-content: center;
+    }
+}
