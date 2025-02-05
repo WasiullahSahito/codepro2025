@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -17,7 +17,7 @@ body {
 }
 
 .hero-section {
-    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url('img/hero-img.png');
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("img/hero-img.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -91,16 +91,34 @@ body {
     transform: translateY(-3px);
 }
 
+.team-member .social-links i {
+    font-size: 1rem;
+}
+
 .animated {
     animation: float 3s ease-in-out infinite;
 }
- .bg-darker {
-     background-color: #14213d;
- }
 
- .text-primary i {
-     font-size: 2.5rem;
- }
+.bg-darker {
+    background-color: #14213d;
+}
+
+.text-primary i {
+    font-size: 2.5rem;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 1.5rem;
+}
 
 @keyframes float {
     0% {
@@ -113,15 +131,5 @@ body {
 
     100% {
         transform: translateY(0px);
-    }
-}
-
-@media (max-width: 991.98px) {
-    .hero-section {
-        text-align: center;
-    }
-
-    .hero-section .btn-container {
-        justify-content: center;
     }
 }
